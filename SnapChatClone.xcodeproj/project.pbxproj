@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		22CBC3381E3D7A54006166E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3371E3D7A54006166E0 /* AppDelegate.swift */; };
-		22CBC33A1E3D7A54006166E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3391E3D7A54006166E0 /* ViewController.swift */; };
+		22CBC33A1E3D7A54006166E0 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3391E3D7A54006166E0 /* CameraVC.swift */; };
 		22CBC33D1E3D7A54006166E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CBC33B1E3D7A54006166E0 /* Main.storyboard */; };
 		22CBC33F1E3D7A54006166E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CBC33E1E3D7A54006166E0 /* Assets.xcassets */; };
 		22CBC3421E3D7A54006166E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CBC3401E3D7A54006166E0 /* LaunchScreen.storyboard */; };
+		22CBC34F1E3D7B3D006166E0 /* extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC34E1E3D7B3D006166E0 /* extenstion.swift */; };
+		22CBC3511E3D7B56006166E0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3501E3D7B56006166E0 /* PhotoCaptureDelegate.swift */; };
+		22CBC3531E3D7BA0006166E0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3521E3D7BA0006166E0 /* PreviewView.swift */; };
+		22CBC3551E3D7BEC006166E0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CBC3541E3D7BEC006166E0 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22CBC3341E3D7A54006166E0 /* SnapChatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CBC3371E3D7A54006166E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22CBC3391E3D7A54006166E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22CBC3391E3D7A54006166E0 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		22CBC33C1E3D7A54006166E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22CBC33E1E3D7A54006166E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22CBC3411E3D7A54006166E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22CBC3431E3D7A54006166E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CBC34E1E3D7B3D006166E0 /* extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extenstion.swift; sourceTree = "<group>"; };
+		22CBC3501E3D7B56006166E0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		22CBC3521E3D7BA0006166E0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		22CBC3541E3D7BEC006166E0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		22CBC3361E3D7A54006166E0 /* SnapChatClone */ = {
 			isa = PBXGroup;
 			children = (
+				22CBC34D1E3D7AA9006166E0 /* Services */,
+				22CBC34C1E3D7AA3006166E0 /* Delegate */,
+				22CBC34B1E3D7A99006166E0 /* Storyboard */,
+				22CBC34A1E3D7A93006166E0 /* IBDesignables */,
+				22CBC3491E3D7A8A006166E0 /* extension */,
 				22CBC3371E3D7A54006166E0 /* AppDelegate.swift */,
-				22CBC3391E3D7A54006166E0 /* ViewController.swift */,
+				22CBC3391E3D7A54006166E0 /* CameraVC.swift */,
 				22CBC33B1E3D7A54006166E0 /* Main.storyboard */,
 				22CBC33E1E3D7A54006166E0 /* Assets.xcassets */,
 				22CBC3401E3D7A54006166E0 /* LaunchScreen.storyboard */,
 				22CBC3431E3D7A54006166E0 /* Info.plist */,
+				22CBC3521E3D7BA0006166E0 /* PreviewView.swift */,
 			);
 			path = SnapChatClone;
+			sourceTree = "<group>";
+		};
+		22CBC3491E3D7A8A006166E0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				22CBC34E1E3D7B3D006166E0 /* extenstion.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		22CBC34A1E3D7A93006166E0 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				22CBC3541E3D7BEC006166E0 /* RoundButton.swift */,
+			);
+			name = IBDesignables;
+			sourceTree = "<group>";
+		};
+		22CBC34B1E3D7A99006166E0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		22CBC34C1E3D7AA3006166E0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				22CBC3501E3D7B56006166E0 /* PhotoCaptureDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		22CBC34D1E3D7AA9006166E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22CBC33A1E3D7A54006166E0 /* ViewController.swift in Sources */,
+				22CBC3551E3D7BEC006166E0 /* RoundButton.swift in Sources */,
+				22CBC3531E3D7BA0006166E0 /* PreviewView.swift in Sources */,
+				22CBC33A1E3D7A54006166E0 /* CameraVC.swift in Sources */,
 				22CBC3381E3D7A54006166E0 /* AppDelegate.swift in Sources */,
+				22CBC3511E3D7B56006166E0 /* PhotoCaptureDelegate.swift in Sources */,
+				22CBC34F1E3D7B3D006166E0 /* extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
